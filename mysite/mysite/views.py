@@ -244,6 +244,7 @@ def return_car (request, idCustomer, idCar):
     theCar.status = "Available"
     theCar.bookedBy = 0
     theCustomer.bookedCar = 0
+    theCustomer.cars = 0
 
     theCar.save()
     theCustomer.save()
