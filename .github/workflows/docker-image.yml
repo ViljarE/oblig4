@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: oblig4/mysite/Dockerfile
+          file: https://github.com/ViljarE/oblig4/tree/main/mysite
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/django-docker:latest
       
