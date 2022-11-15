@@ -14,7 +14,7 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR https://github.com/ViljarE/oblig4/tree/main/mysite
 
-COPY mysite/requirements.txt requirements.txt
+COPY ./requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 COPY . .
