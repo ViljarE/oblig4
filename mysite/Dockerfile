@@ -12,7 +12,7 @@ ENV PYTHONUNBUFFERED 1
 # The folder will be used as the work directory
 # for the subsequent commands.
 
-WORKDIR /mysite
+WORKDIR https://github.com/ViljarE/oblig4/raw/main/mysite
 
 COPY https://github.com/ViljarE/oblig4/raw/main/mysite/requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
